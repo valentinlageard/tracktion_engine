@@ -11,7 +11,7 @@ project(tracktion
         HOMEPAGE_URL "https://github.com/Tracktion/tracktion_engine"
 )
 
-add_subdirectory(modules/juce)
+# add_subdirectory(modules/juce)
 add_subdirectory(modules)
 
 add_subdirectory(examples)
