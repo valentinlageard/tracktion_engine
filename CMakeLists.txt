@@ -14,4 +14,4 @@ project(tracktion
 # add_subdirectory(modules/juce)
 add_subdirectory(modules)
 
-add_subdirectory(examples)
+# add_subdirectory(examples)
