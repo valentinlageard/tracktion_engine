@@ -8,6 +8,8 @@
     Tracktion Engine uses a GPL/commercial licence - see LICENCE.md for details.
 */
 
+#include "../include/PalmerModulators/PalmerLFOModifier.h"
+
 namespace tracktion { inline namespace engine
 {
 
@@ -305,7 +307,7 @@ Modifier* ModifierList::createNewObject (const juce::ValueTree& v)
 
     if (m == nullptr)
     {
-        if (v.hasType (IDs::LFO))                         m = new LFOModifier (edit, v);
+        if (v.hasType (IDs::LFO))                         m = new PalmerLFOModifier (edit, v);
         else if (v.hasType (IDs::BREAKPOINTOSCILLATOR))   m = new BreakpointOscillatorModifier (edit, v);
         else if (v.hasType (IDs::STEP))                   m = new StepModifier (edit, v);
         else if (v.hasType (IDs::ENVELOPEFOLLOWER))       m = new EnvelopeFollowerModifier (edit, v);
